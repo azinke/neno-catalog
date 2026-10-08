@@ -1,0 +1,16 @@
+api: agents.yml/catalog/v1alpha1
+metadata:
+  name: neno-models
+  version: 1.2.0
+  description: Portable model resources for the adapters built into Neno.
+spec:
+  actions: []
+  models:
+    - path: ./models/openai/default.yaml
+    - path: ./models/openai/sprinter.yaml
+    - path: ./models/openai/allrounder.yaml
+    - path: ./models/openai/thinker.yaml
+    - path: ./models/anthropic/default.yaml
+    - path: ./models/anthropic/sprinter.yaml
+    - path: ./models/anthropic/allrounder.yaml
+    - path: ./models/anthropic/thinker.yaml
