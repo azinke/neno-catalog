@@ -1,0 +1,30 @@
+format: neno/model/v1
+metadata:
+  id: openai/gpt-5-nano/sprinter
+spec:
+  adapter:
+    format: neno/openai/v1
+    endpoint: https://api.openai.com/v1/responses
+    api: responses
+    output-token-parameter: max_output_tokens
+    allow-loopback-http: false
+  provider: openai
+  model: gpt-5-nano-2025-08-07
+  authentication:
+    scheme: bearer
+    credential-slot: openai
+  parameters:
+    service_tier: default
+    reasoning:
+      effort: low
+  limits:
+    input-tokens: 400000
+    output-tokens: 128000
+    minimum-output-tokens: 16
+  accounting:
+    id: openai.responses.gpt-5-nano-2025-08-07.v1
+    revision: 2026-10-21
+  capabilities:
+    reasoning: true
+    output-format: json-schema-strict
+    tools: true

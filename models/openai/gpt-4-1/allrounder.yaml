@@ -1,0 +1,29 @@
+format: neno/model/v1
+metadata:
+  id: openai/gpt-4-1/allrounder
+spec:
+  adapter:
+    format: neno/openai/v1
+    endpoint: https://api.openai.com/v1/responses
+    api: responses
+    output-token-parameter: max_output_tokens
+    allow-loopback-http: false
+  provider: openai
+  model: gpt-4.1-2025-04-14
+  authentication:
+    scheme: bearer
+    credential-slot: openai
+  parameters:
+    service_tier: default
+    temperature: 0.5
+  limits:
+    input-tokens: 1047576
+    output-tokens: 32768
+    minimum-output-tokens: 16
+  accounting:
+    id: openai.responses.gpt-4.1-2025-04-14.v1
+    revision: 2026-10-21
+  capabilities:
+    reasoning: false
+    output-format: json-schema-strict
+    tools: true

@@ -1,0 +1,29 @@
+format: neno/model/v1
+metadata:
+  id: openai/gpt-4o/thinker
+spec:
+  adapter:
+    format: neno/openai/v1
+    endpoint: https://api.openai.com/v1/responses
+    api: responses
+    output-token-parameter: max_output_tokens
+    allow-loopback-http: false
+  provider: openai
+  model: gpt-4o-2024-11-20
+  authentication:
+    scheme: bearer
+    credential-slot: openai
+  parameters:
+    service_tier: default
+    temperature: 1
+  limits:
+    input-tokens: 128000
+    output-tokens: 16384
+    minimum-output-tokens: 16
+  accounting:
+    id: openai.responses.gpt-4o-2024-11-20.v1
+    revision: 2026-10-21
+  capabilities:
+    reasoning: false
+    output-format: json-schema-strict
+    tools: true

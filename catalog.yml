@@ -1,16 +1,157 @@
 api: agents.yml/catalog/v1alpha1
 metadata:
   name: neno-models
-  version: 1.2.0
+  version: 1.0.0
   description: Portable model resources for the adapters built into Neno.
 spec:
   actions: []
   models:
-    - path: ./models/openai/default.yaml
-    - path: ./models/openai/sprinter.yaml
-    - path: ./models/openai/allrounder.yaml
-    - path: ./models/openai/thinker.yaml
-    - path: ./models/anthropic/default.yaml
-    - path: ./models/anthropic/sprinter.yaml
-    - path: ./models/anthropic/allrounder.yaml
-    - path: ./models/anthropic/thinker.yaml
+    - path: ./models/openai/luna/default.yaml
+    - path: ./models/openai/luna/sprinter.yaml
+    - path: ./models/openai/luna/allrounder.yaml
+    - path: ./models/openai/luna/thinker.yaml
+
+    - path: ./models/openai/astra/default.yaml
+    - path: ./models/openai/astra/sprinter.yaml
+    - path: ./models/openai/astra/allrounder.yaml
+    - path: ./models/openai/astra/thinker.yaml
+
+    - path: ./models/openai/sol/default.yaml
+    - path: ./models/openai/sol/sprinter.yaml
+    - path: ./models/openai/sol/allrounder.yaml
+    - path: ./models/openai/sol/thinker.yaml
+
+    - path: ./models/openai/gpt-4-1/default.yaml
+    - path: ./models/openai/gpt-4-1/sprinter.yaml
+    - path: ./models/openai/gpt-4-1/allrounder.yaml
+    - path: ./models/openai/gpt-4-1/thinker.yaml
+
+    - path: ./models/openai/gpt-4-1-mini/default.yaml
+    - path: ./models/openai/gpt-4-1-mini/sprinter.yaml
+    - path: ./models/openai/gpt-4-1-mini/allrounder.yaml
+    - path: ./models/openai/gpt-4-1-mini/thinker.yaml
+
+    - path: ./models/openai/gpt-4o/default.yaml
+    - path: ./models/openai/gpt-4o/sprinter.yaml
+    - path: ./models/openai/gpt-4o/allrounder.yaml
+    - path: ./models/openai/gpt-4o/thinker.yaml
+
+    - path: ./models/openai/gpt-4o-mini/default.yaml
+    - path: ./models/openai/gpt-4o-mini/sprinter.yaml
+    - path: ./models/openai/gpt-4o-mini/allrounder.yaml
+    - path: ./models/openai/gpt-4o-mini/thinker.yaml
+
+    - path: ./models/openai/gpt-5/default.yaml
+    - path: ./models/openai/gpt-5/sprinter.yaml
+    - path: ./models/openai/gpt-5/allrounder.yaml
+    - path: ./models/openai/gpt-5/thinker.yaml
+
+    - path: ./models/openai/gpt-5-mini/default.yaml
+    - path: ./models/openai/gpt-5-mini/sprinter.yaml
+    - path: ./models/openai/gpt-5-mini/allrounder.yaml
+    - path: ./models/openai/gpt-5-mini/thinker.yaml
+
+    - path: ./models/openai/gpt-5-nano/default.yaml
+    - path: ./models/openai/gpt-5-nano/sprinter.yaml
+    - path: ./models/openai/gpt-5-nano/allrounder.yaml
+    - path: ./models/openai/gpt-5-nano/thinker.yaml
+
+    - path: ./models/openai/gpt-5-2/default.yaml
+    - path: ./models/openai/gpt-5-2/sprinter.yaml
+    - path: ./models/openai/gpt-5-2/allrounder.yaml
+    - path: ./models/openai/gpt-5-2/thinker.yaml
+
+    - path: ./models/openai/gpt-5-4/default.yaml
+    - path: ./models/openai/gpt-5-4/sprinter.yaml
+    - path: ./models/openai/gpt-5-4/allrounder.yaml
+    - path: ./models/openai/gpt-5-4/thinker.yaml
+
+    - path: ./models/openai/gpt-5-4-mini/default.yaml
+    - path: ./models/openai/gpt-5-4-mini/sprinter.yaml
+    - path: ./models/openai/gpt-5-4-mini/allrounder.yaml
+    - path: ./models/openai/gpt-5-4-mini/thinker.yaml
+
+    - path: ./models/openai/gpt-5-5/default.yaml
+    - path: ./models/openai/gpt-5-5/sprinter.yaml
+    - path: ./models/openai/gpt-5-5/allrounder.yaml
+    - path: ./models/openai/gpt-5-5/thinker.yaml
+
+    - path: ./models/openai/gpt-5-6-sol/default.yaml
+    - path: ./models/openai/gpt-5-6-sol/sprinter.yaml
+    - path: ./models/openai/gpt-5-6-sol/allrounder.yaml
+    - path: ./models/openai/gpt-5-6-sol/thinker.yaml
+
+    - path: ./models/openai/gpt-5-6-terra/default.yaml
+    - path: ./models/openai/gpt-5-6-terra/sprinter.yaml
+    - path: ./models/openai/gpt-5-6-terra/allrounder.yaml
+    - path: ./models/openai/gpt-5-6-terra/thinker.yaml
+
+    - path: ./models/openai/gpt-5-6-luna/default.yaml
+    - path: ./models/openai/gpt-5-6-luna/sprinter.yaml
+    - path: ./models/openai/gpt-5-6-luna/allrounder.yaml
+    - path: ./models/openai/gpt-5-6-luna/thinker.yaml
+
+    - path: ./models/anthropic/haiku/default.yaml
+    - path: ./models/anthropic/haiku/sprinter.yaml
+    - path: ./models/anthropic/haiku/allrounder.yaml
+    - path: ./models/anthropic/haiku/thinker.yaml
+
+    - path: ./models/anthropic/fable-5-1/default.yaml
+    - path: ./models/anthropic/fable-5-1/sprinter.yaml
+    - path: ./models/anthropic/fable-5-1/allrounder.yaml
+    - path: ./models/anthropic/fable-5-1/thinker.yaml
+
+    - path: ./models/anthropic/fable-5/default.yaml
+    - path: ./models/anthropic/fable-5/sprinter.yaml
+    - path: ./models/anthropic/fable-5/allrounder.yaml
+    - path: ./models/anthropic/fable-5/thinker.yaml
+
+    - path: ./models/anthropic/opus-5-5/default.yaml
+    - path: ./models/anthropic/opus-5-5/sprinter.yaml
+    - path: ./models/anthropic/opus-5-5/allrounder.yaml
+    - path: ./models/anthropic/opus-5-5/thinker.yaml
+
+    - path: ./models/anthropic/opus-5/default.yaml
+    - path: ./models/anthropic/opus-5/sprinter.yaml
+    - path: ./models/anthropic/opus-5/allrounder.yaml
+    - path: ./models/anthropic/opus-5/thinker.yaml
+
+    - path: ./models/anthropic/opus-4-8/default.yaml
+    - path: ./models/anthropic/opus-4-8/sprinter.yaml
+    - path: ./models/anthropic/opus-4-8/allrounder.yaml
+    - path: ./models/anthropic/opus-4-8/thinker.yaml
+
+    - path: ./models/anthropic/opus-4-7/default.yaml
+    - path: ./models/anthropic/opus-4-7/sprinter.yaml
+    - path: ./models/anthropic/opus-4-7/allrounder.yaml
+    - path: ./models/anthropic/opus-4-7/thinker.yaml
+
+    - path: ./models/anthropic/opus-4-6/default.yaml
+    - path: ./models/anthropic/opus-4-6/sprinter.yaml
+    - path: ./models/anthropic/opus-4-6/allrounder.yaml
+    - path: ./models/anthropic/opus-4-6/thinker.yaml
+
+    - path: ./models/anthropic/opus-4-5/default.yaml
+    - path: ./models/anthropic/opus-4-5/sprinter.yaml
+    - path: ./models/anthropic/opus-4-5/allrounder.yaml
+    - path: ./models/anthropic/opus-4-5/thinker.yaml
+
+    - path: ./models/anthropic/sonnet-5-5/default.yaml
+    - path: ./models/anthropic/sonnet-5-5/sprinter.yaml
+    - path: ./models/anthropic/sonnet-5-5/allrounder.yaml
+    - path: ./models/anthropic/sonnet-5-5/thinker.yaml
+
+    - path: ./models/anthropic/sonnet-5/default.yaml
+    - path: ./models/anthropic/sonnet-5/sprinter.yaml
+    - path: ./models/anthropic/sonnet-5/allrounder.yaml
+    - path: ./models/anthropic/sonnet-5/thinker.yaml
+
+    - path: ./models/anthropic/sonnet-4-6/default.yaml
+    - path: ./models/anthropic/sonnet-4-6/sprinter.yaml
+    - path: ./models/anthropic/sonnet-4-6/allrounder.yaml
+    - path: ./models/anthropic/sonnet-4-6/thinker.yaml
+
+    - path: ./models/anthropic/haiku-5-5/default.yaml
+    - path: ./models/anthropic/haiku-5-5/sprinter.yaml
+    - path: ./models/anthropic/haiku-5-5/allrounder.yaml
+    - path: ./models/anthropic/haiku-5-5/thinker.yaml

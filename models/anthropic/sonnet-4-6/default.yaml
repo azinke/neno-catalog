@@ -1,0 +1,29 @@
+format: neno/model/v1
+metadata:
+  id: anthropic/sonnet-4-6/default
+spec:
+  adapter:
+    format: neno/anthropic/v1
+    endpoint: https://api.anthropic.com/v1/messages
+    version: 2023-06-01
+    allow-loopback-http: false
+  provider: anthropic
+  model: claude-sonnet-4-6
+  authentication:
+    scheme: x-api-key
+    credential-slot: anthropic
+  parameters:
+    service_tier: standard_only
+    thinking:
+      type: adaptive
+  limits:
+    input-tokens: 1000000
+    output-tokens: 128000
+    minimum-output-tokens: 16
+  accounting:
+    id: anthropic.messages.claude-sonnet-4-6.v1
+    revision: 2026-10-21
+  capabilities:
+    tools: true
+    sampling: false
+    effort: true
